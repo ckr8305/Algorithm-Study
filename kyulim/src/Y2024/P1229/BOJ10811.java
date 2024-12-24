@@ -11,6 +11,33 @@ public class BOJ10811 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        String[] str = br.readLine().split(" ");
+        int N = Integer.parseInt(str[0]);
+        int M = Integer.parseInt(str[1]);
+        int[] arr = new int[N];
+
+        for (int i = 0; i < N; i++) {
+            arr[i] = i + 1;
+        }
+
+        for (int k = 0; k < M; k++) {
+            String[] strArr = br.readLine().split(" ");
+            int i = Integer.parseInt(strArr[0]) - 1;
+            int j = Integer.parseInt(strArr[1]) - 1;
+
+            while (i < j) {
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+                i++;
+                j--;
+            }
+        }
+
+        for (int i = 0; i < N; i++) {
+            bw.write(arr[i] + " ");
+        }
+        bw.newLine();
         br.close();
         bw.close();
     }
