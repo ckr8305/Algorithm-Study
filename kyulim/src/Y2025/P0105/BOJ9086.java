@@ -1,4 +1,4 @@
-package Y2025.P1005;
+package Y2025.P0105;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
