@@ -12,6 +12,10 @@ public class BOJ2789 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        String str = br.readLine();
+        str = str.replaceAll("C|A|M|B|R|I|D|G|E", "");
+        bw.write(str);
+
         br.close();
         bw.flush();
         bw.close();
