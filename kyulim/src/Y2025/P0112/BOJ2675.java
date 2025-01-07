@@ -25,7 +25,6 @@ public class BOJ2675 {
             }
             bw.write("\n");
         }
-
         br.close();
         bw.flush();
         bw.close();
