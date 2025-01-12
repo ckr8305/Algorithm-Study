@@ -1,4 +1,4 @@
-package Y2025.P1012;
+package Y2025.P0112;
 
 import java.io.BufferedReader;
 import java.io.IOException;

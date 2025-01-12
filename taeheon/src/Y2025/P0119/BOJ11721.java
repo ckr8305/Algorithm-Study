@@ -1,22 +1,21 @@
-package Y2025.P0112;
+package Y2025.P0119;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class BOJ11720 {
+public class BOJ11721 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
-
         String s = br.readLine();
-        int sum = 0;
 
-        for (int i = 0; i < n; i++) {
-            sum += (s.charAt(i) - '0');
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (i != 0 && i % 10 == 0) sb.append("\n");
+            sb.append(s.charAt(i));
         }
 
-        System.out.println(sum);
+        System.out.println(sb);
     }
 }
