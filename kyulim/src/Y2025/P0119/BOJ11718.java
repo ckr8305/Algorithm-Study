@@ -11,6 +11,13 @@ public class BOJ11718 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
+        while (true) {
+            String str = br.readLine();
+            if (str == null || str.isEmpty())
+                break;
+            bw.write(str + "\n");
+
+        }
         br.close();
         bw.flush();
         bw.close();
